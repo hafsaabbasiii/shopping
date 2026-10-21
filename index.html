@@ -1,0 +1,110 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>ShopEase - Online Shopping Store</title>
+  <meta name="description" content="Shop fashion, accessories and lifestyle products online at affordable prices. Discover your favorites at ShopEase.">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#166534">
+
+  <!-- Replace with your actual website URL -->
+  <link rel="canonical" href="https://example.com/">
+
+  <meta property="og:title" content="ShopEase - Online Shopping">
+  <meta property="og:description" content="Discover your favorite products at ShopEase.">
+  <meta property="og:type" content="website">
+
+  <link rel="stylesheet" href="index,css.css">
+  <script src="index.js" defer></script>
+</head>
+
+<body>
+  <div class="announcement">
+    Welcome to ShopEase! Discover your favorites.
+  </div>
+
+  <header class="header">
+    <a class="logo" href="#home">ShopEase.</a>
+
+    <nav aria-label="Main navigation">
+      <a href="#home">Home</a>
+      <a href="#products">Products</a>
+      <a href="#about">About</a>
+    </nav>
+
+    <div class="header-actions">
+      <form id="searchForm" class="search-form" role="search">
+        <input id="searchInput" type="search"
+          placeholder="Search products..." aria-label="Search products">
+        <button type="submit">Search</button>
+      </form>
+
+      <a class="cart-link" href="#products">
+        🛒 Cart (<span id="cartCount">0</span>)
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <span class="eyebrow">YOUR EVERYDAY SHOPPING DESTINATION</span>
+        <h1>Find Your Next Favorite Thing</h1>
+        <p>
+          Discover stylish products, everyday essentials
+          and great finds all in one place.
+        </p>
+        <a href="#products" class="primary-btn">Shop Now →</a>
+      </div>
+
+      <img
+        src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=1000&q=80"
+        alt="Modern clothing and lifestyle shopping store"
+        width="1000"
+        height="700"
+        fetchpriority="high">
+    </section>
+
+    <section class="features" id="about">
+      <article class="feature">
+        <span>🚚</span>
+        <h2>Easy Shopping</h2>
+        <p>Explore your favorite products with ease.</p>
+      </article>
+
+      <article class="feature">
+        <span>✨</span>
+        <h2>Quality Products</h2>
+        <p>Discover useful products for everyday life.</p>
+      </article>
+
+      <article class="feature">
+        <span>💚</span>
+        <h2>Customer First</h2>
+        <p>A simple and enjoyable shopping experience.</p>
+      </article>
+    </section>
+
+    <section class="products-section" id="products">
+      <div class="section-title">
+        <span class="eyebrow">OUR COLLECTION</span>
+        <h2>Popular Products</h2>
+        <p>Explore products you'll love.</p>
+      </div>
+
+      <div class="product-grid" id="productGrid"></div>
+    </section>
+  </main>
+
+  <footer>
+    <a class="logo footer-logo" href="#home">ShopEase.</a>
+    <p>Your everyday shopping destination.</p>
+    <p>© <span id="year"></span> ShopEase. All rights reserved.</p>
+  </footer>
+
+  <div id="message" class="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
